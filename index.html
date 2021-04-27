@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="icon" type="images/jpg" sizes="32x32" href="./images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/3ba9c92733.js"></script>
+    <title>REDSTORE - Convenient Way Of Shopping</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- --------------------NAVBAR------------------- -->
+            <div class="navbar flex justify-between">
+                <div class="logo">
+                    <img src="./images/logo.png" width="125px" alt="company-logo">
+                </div>
+                <nav class="flex text-center">
+                    <ul class="flex" id="menuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                    <div class="bag-image">
+                            <img src="./images/cart.png" width="25px" height="25px" alt="shopping-bag image">
+                    </div>
+                    <div class="menu-image" onclick="menuToggle()">
+                        <img src="./images/menu.png" alt="">
+                    </div>
+                </nav>
+            </div>
+            <!-- ----------------------MAIN-HEADER ------------------>
+            <div class="web-header flex justify-around">
+                <div class="col-1">
+                    <div class="header-description">
+                        <h1>Give your Workout <br>A New Style!</h1>
+                        <p>Success isn't always about greatness. It's about consistency.
+                            Consistent hard work becomes a path to success. Greatness 
+                            will come  along.
+                        </p>
+                        <button class="btn btn-orange">Explore Now&nbsp;&rarr;</button>  
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="big-image">
+                        <img src="./images/image1.png"  width="" alt="Two athletes playing football">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </header>
+    <!-- -------------------FEATURED-CATEGORIES----------------- -->
+    <section class="featured-categories">
+        <div class="container-sm">
+            <h2 class="section-heading">Featured Category</h2>
+            <div class="category-images flex justify-around">
+                <div class="image-1 col-3">
+                    <img src="./images/category-3.jpg" alt="">
+                </div>
+                <div class="image-2 col-3">
+                    <img src="./images/category-2.jpg" alt="">
+                </div>
+                <div class="image-3 col-3">
+                    <img src="./images/category-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------FEATURED-PRODUCTS----------------- -->
+    <section class="featured-products">
+        <div class="container-sm">
+            <h2 class="section-heading">Featured Products</h2>
+            <div class="featured-product-images flex justify-around">
+                <div class="col-4">
+                    <img src="./images/product-1.jpg" alt="">
+                    <h4>RoundNeck T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-2.jpg" alt="">
+                    <h4>Neon Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$19.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-3.jpg" alt="">
+                    <h4>Khaki Jeans</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$79.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-4.jpg" alt="">
+                    <h4>Collared T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$69.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------LATEST PRODUCTS----------------- -->
+     <section class="latest-products">
+        <div class="container-sm">
+            <h2 class="section-heading">Latest Products</h2>
+            <div class="latest-product-images flex justify-around">
+                <div class="col-4">
+                    <img src="./images/product-5.jpg" alt="">
+                    <h4>Running Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-6.jpg" alt="">
+                    <h4>RoundNeck Black Tee</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-7.jpg" alt="">
+                    <h4>HRX Socks</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-8.jpg" alt="">
+                    <h4>Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$69.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-9.jpg" alt="">
+                    <h4>Roadster Watch</h4>
+                    <div class="rating">
+                       <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$99.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-10.jpg" alt="">
+                    <h4>Trecking Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$39.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-11.jpg" alt="">
+                    <h4>Sports Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$149.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-12.jpg" alt="">
+                    <h4>Joggers</h4>
+                    <div class="rating">
+                       <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$119.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------EXCLUSIVE SECTION----------------- -->
+    <section class="exclusive">
+        <div class="container-sm flex justify-around">
+            <div class="watch">
+                <img src="./images/exclusive.png" alt="A smart watch">
+            </div>
+            <div class="watch-description">
+                <p>Exclusively Available only on Redstore</p>
+                <h2>Smart Band 4</h2>
+                <p>Mi Smart Band-4 features a 38.9% larger AMOLED display 
+                    ( than Mi Smart Band-3) with adjustable brightness, so everything 
+                    can be as clear as it can be.
+                </p>
+                <button class="btn">Buy Now&nbsp;&rarr;</button>
+            </div>        
+        </div>
+    </section>
+
+    <!-- -----------------COMMENT SECTION-------------- -->
+    <div class="comments">
+        <div class="container-sm">
+            <div class="cards flex">
+                <div class="card ">
+                    <div class="card-content flex">
+                        <div class="comment-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quos deleniti quam sint provident animi.
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="user-image flex">
+                            <img src="./images/user-1.png" alt="user-image">
+                            <h4>Sean Parker</h4>                   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <div class="card-content flex">
+                        <div class="comment-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos deleniti quam sint provident animi.
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="user-image flex">
+                            <img src="./images/user-2.png" alt="user-image">
+                            <h4>Sean Parker</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-content flex">
+                        <div class="comment-icon">
+                            <i class="fa fa-quote-left"></i>
+                        </div>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos deleniti quam sint provident animi.
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="user-image flex">
+                            <img src="./images/user-3.png" alt="user-image">
+                            <h4>Sean Parker</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+      <!-- -------------------------COMPANY LOGOS ----------------->
+      <section class=" brand-logos">
+          <div class="container-sm flex justify-around">
+              <div class="col-5">
+                <img src="./images/logo-godrej.png" alt="goorej logo">
+              </div>
+              <div class="col-5">
+                <img src="./images/logo-oppo.png" alt="oppo logo">
+              </div>
+              <div class="col-5">
+                <img src="./images/logo-coca-cola.png" alt="coco-cola logo">
+              </div>
+              <div class="col-5">
+                <img src="./images/logo-paypal.png" alt="Paypal logo">
+              </div>
+              <div class="col-5">
+                <img src="./images/logo-philips.png" alt="philips logo">
+              </div>
+          </div>
+      </section>
+      <!-- ----------------------FOOTER------------------------ -->
+      <footer>
+          <div class="container">
+              <div class="footer-wrapper flex">
+                    <div class="footer-col-1 ">
+                        <h3>Download Our App</h3>
+                        <p>Click here to download app for Android and IOS</p>
+                        <div class="downloads">
+                            <img src="./images/app-store.png" alt="app-store logo">
+                            <img src="./images/play-store.png" alt="play-store logo">
+                        </div>
+                    </div>
+                    <div class="footer-col-2 ">
+                        <div class="clogo">
+                            <img src="./images/logo-white.png" alt="compnay logo in white">
+                        </div>
+                        <p>Our Purpose Is To Sustainably Make The Pleasure And 
+                            The Benefits Of The Sports Accessible to Many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3 ">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4 ">
+                        <h3>Follow Us</h3>
+                        <div class="follow flex">
+                            <i class="fa fa-instagram"></i>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="follow flex">
+                            <i class="fa fa-facebook-official"></i>
+                            <p>Facebook</p>
+                        </div><div class="follow flex">
+                            <i class="fa fa-twitter"></i>
+                            <p>Twitter</p>
+                        </div><div class="follow flex">
+                            <i class="fa fa-youtube-play"></i>
+                            <p>Youtube</p>
+                        </div>
+                    </div>
+              </div>
+          </div>
+          <hr>
+          <div class="copyright">
+              <p> &copy; All Rights Reserved by <strong>Aniket Pithadia</strong>.</p> 
+          </div>
+      </footer>
+      <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menuToggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            }
+            else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
