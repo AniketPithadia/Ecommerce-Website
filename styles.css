@@ -475,11 +475,76 @@ hr {
 @media (max-width: 450px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
   .container {
-    max-width: 430px;
+    max-width: 400px;
+    overflow-x: hidden;
+  }
+  .container-sm {
+    overflow-x: hidden;
+  }
+  .navbar .logo {
+    margin-top: 2rem;
+  }
+  .web-header .header-description {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .web-header .header-description h1 {
+    font-size: 1.7rem;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  .section-heading::after {
+    left: 36%;
+  }
+  nav .menu-image {
+    display: block;
+    margin-top: 1.7rem;
   }
   .featured-categories .category-images.flex {
     flex-direction: column;
+  }
+  .exclusive .container-sm.flex {
+    flex-direction: column;
+  }
+  .exclusive h2 {
+    font-size: 2.1rem;
+  }
+  .comments .cards.flex {
+    flex-direction: column;
+  }
+  .brand-logos .flex {
+    flex-wrap: wrap;
+  }
+  .footer-wrapper.flex {
+    flex-direction: column;
+  }
+  .footer-wrapper .footer-col-1,
+  .footer-wrapper .footer-col-2,
+  .footer-wrapper .footer-col-3,
+  .footer-wrapper .footer-col-4 {
+    margin: 1rem 0;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  .footer-wrapper .footer-col-1 h3 {
+    text-align: center;
+  }
+  .footer-wrapper .footer-col-1 .downloads {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    width: 125px;
+  }
+  .copyright p {
+    font-size: 0.8rem;
+    color: #c9c9c9;
+  }
+}
+@media (max-width: 325px) {
+  .section-heading::after {
+    left: 32%;
   }
 }
