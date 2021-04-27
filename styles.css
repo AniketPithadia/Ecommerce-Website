@@ -432,7 +432,7 @@ hr {
   header .navbar nav > ul {
     display: block;
     position: absolute;
-    top: 90px;
+    top: 100px;
     right: 40px;
     background: #ffd6d6;
     width: 30%;
