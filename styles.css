@@ -373,6 +373,7 @@ hr {
   width: 28px;
   margin-left: 1rem;
   display: none;
+  cursor: pointer;
 }
 .menu-image img {
   width: 100%;
