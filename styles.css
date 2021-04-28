@@ -462,6 +462,9 @@ hr {
   .latest-products .col-4 {
     min-width: 170px;
   }
+  .section-heading::after {
+    left: 43%;
+  }
   footer .footer-wrapper p,
   li {
     font-size: 0.8rem;
