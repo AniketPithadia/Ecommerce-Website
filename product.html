@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="icon" type="images/jpg" sizes="32x32" href="./images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/3ba9c92733.js"></script>
+    <title>REDSTORE - Product Page</title>
+</head>
+
+<body>
+        <div class="container">
+            <!-- --------------------NAVBAR------------------- -->
+            <div class="navbar flex justify-between">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" width="125px" alt="company-logo"></a>
+                </div>
+                <nav class="flex text-center">
+                    <ul class="flex" id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="Log_Register.html">Account</a></li>
+                    </ul>
+                    <div class="bag-image">
+                        <a href="Billing_Cart.html"><img src="./images/cart.png" width="25px" height="25px" alt="shopping-bag image"></a>
+                    </div>
+                    <div class="menu-image" onclick="menuToggle()">
+                        <img src="./images/menu.png" alt="">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+    
+    <!-- ----------------------PRODUCTS-PAGE----------------- -->
+    <section class="all-products">
+        <div class="container-sm">
+            <div class="headings flex justify-between" >
+                <h2>All Products</h2>
+                <div class="sort">
+                    <select>
+                        <option value="Default Sort" disabled>Default Sort</option>
+                        <option value="Default Sort" >Sort By Price</option>
+                        <option value="Default Sort" >Sort By Rating</option>
+                        <option value="Default Sort" >Sort By Sizes</option>
+                        <option value="Default Sort" >Sort By Brands</option>
+                    </select>
+                </div>
+            </div>
+            <div class="featured-product-images flex justify-around">
+                <div class="col-4">
+                    <img src="./images/product-1.jpg" alt="">
+                    <h4>Round T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-2.jpg" alt="">
+                    <h4>Neon Sneakers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$19.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-3.jpg" alt="">
+                    <h4>Khaki Jeans</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$79.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-4.jpg" alt="">
+                    <h4>Collared T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$69.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-5.jpg" alt="">
+                    <h4>Running Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-6.jpg" alt="">
+                    <h4>Round Black Tee</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$49.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-7.jpg" alt="">
+                    <h4>HRX Socks</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-8.jpg" alt="">
+                    <h4>Fossil Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$69.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-9.jpg" alt="">
+                    <h4>Roadster Watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$99.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-10.jpg" alt="">
+                    <h4>Trecking Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$39.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-11.jpg" alt="">
+                    <h4>Sports Shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$149.99</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/product-12.jpg" alt="">
+                    <h4>Joggers</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$119.99</p>
+                </div>
+            </div>
+            <div class="page-buttons">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&rarr;</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ----------------------FOOTER------------------------ -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper flex">
+                <div class="footer-col-1 ">
+                    <h3>Download Our App</h3>
+                    <p>Click here to download app for Android and IOS</p>
+                    <div class="downloads">
+                        <img src="./images/app-store.png" alt="app-store logo">
+                        <img src="./images/play-store.png" alt="play-store logo">
+                    </div>
+                </div>
+                <div class="footer-col-2 ">
+                    <div class="clogo">
+                        <img src="./images/logo-white.png" alt="compnay logo in white">
+                    </div>
+                    <p>Our Purpose Is To Sustainably Make The Pleasure And
+                        The Benefits Of The Sports Accessible to Many.
+                    </p>
+                </div>
+                <div class="footer-col-3 ">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4 ">
+                    <h3>Follow Us</h3>
+                    <div class="follow flex">
+                        <i class="fa fa-instagram"></i>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="follow flex">
+                        <i class="fa fa-facebook-official"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="follow flex">
+                        <i class="fa fa-twitter"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="follow flex">
+                        <i class="fa fa-youtube-play"></i>
+                        <p>Youtube</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p> &copy; All Rights Reserved by <strong>Aniket Pithadia</strong>.</p>
+        </div>
+    </footer>
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menuToggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            }
+            else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
