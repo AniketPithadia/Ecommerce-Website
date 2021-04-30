@@ -836,7 +836,7 @@ form button {
 }
 @media (max-width: 376px) {
   .section-heading::after {
-    left: 32%;
+    left: 33%;
   }
   .navbar {
     padding-top: 0rem;
