@@ -118,6 +118,18 @@ header {
   cursor: pointer;
 }
 /* -------------------------FEATURED PRODUCTS & LATEST PRODUCTS----------------- */
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  margin-top: 0.25rem;
+  border-radius: 10px;
+  background-color: #ff523b;
+}
 .col-4 {
   flex-basis: 25%;
   padding: 0.8rem;
@@ -877,18 +889,6 @@ form button {
   margin: 2rem 0;
   font-size: 1.8rem;
   color: #6b6b6b;
-}
-.section-heading::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 5px;
-  position: absolute;
-  top: 100%;
-  left: 45%;
-  margin-top: 0.25rem;
-  border-radius: 10px;
-  background-color: #ff523b;
 }
 
 .flex {
